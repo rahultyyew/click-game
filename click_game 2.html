@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Click Game</title>
+    <style>
+        body { font-family: Arial; text-align: center; margin-top: 50px; }
+        button { padding: 20px 40px; font-size: 24px; }
+    </style>
+</head>
+<body>
+    <h1>Click the Button!</h1>
+    <p>Clicks: <span id="counter">0</span></p>
+    <button onclick="increment()">Click Me!</button>
+
+    <script>
+        let count = 0;
+        function increment() {
+            count++;
+            document.getElementById('counter').innerText = count;
+        }
+    </script>
+</body>
+</html>
